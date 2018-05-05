@@ -1,0 +1,16 @@
+Macros
+define(sub(X,Y), X-Y).
+
+c(useless, [debug_info, {output, /your/output/dir}, export_all, {d, sub, 10}]).
+That last one defines a macro and a value to be used which defaults to true.
+
+Native Code Compiling
+20% speed increase!
+
+> hipe:c(Module, OptionsList).
+
+or
+
+> c(Module, [native]).
+
+Gonerated beam file will not be portable across platforms.
